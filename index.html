@@ -39,17 +39,30 @@
       backdrop-filter: blur(20px);
       border: 1px solid rgba(255, 255, 255, 0.25);
       border-radius: 24px;
-      padding: 45px 30px;
+      padding: 40px 30px;
+      overflow: hidden;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    .marquee {
+      display: flex;
+      gap: 60px;
+      animation: marquee 25s linear infinite;
+    }
+    .marquee:hover {
+      animation-play-state: paused;
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
     }
     .partner-logo {
       height: 68px;
+      flex-shrink: 0;
       transition: all 0.3s;
       filter: brightness(1.15) contrast(1.1);
     }
     .partner-logo:hover {
-      transform: scale(1.12);
-      filter: brightness(1.4);
+      transform: scale(1.15);
     }
   </style>
 </head>
@@ -110,7 +123,18 @@
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-5xl font-black text-center mb-12">OUR PARTNERS</h2>
       <div class="highlight-container">
-        <div class="grid grid-cols-3 md:grid-cols-5 gap-10 items-center justify-items-center">
+        <div class="marquee">
+          <img src="logos/Acer.jpg" alt="Acer" class="partner-logo">
+          <img src="logos/Apple.jpg" alt="Apple" class="partner-logo">
+          <img src="logos/bose.jpg" alt="Bose" class="partner-logo">
+          <img src="logos/epson.jpg" alt="Epson" class="partner-logo">
+          <img src="logos/jbl.jpg" alt="JBL" class="partner-logo">
+          <img src="logos/LG.jpg" alt="LG" class="partner-logo">
+          <img src="logos/Samsung.jpg" alt="Samsung" class="partner-logo">
+          <img src="logos/shure.jpg" alt="Shure" class="partner-logo">
+          <img src="logos/toa.jpg" alt="TOA" class="partner-logo">
+          <img src="logos/yamaha.jpg" alt="Yamaha" class="partner-logo">
+          <!-- Duplicate for smooth infinite loop -->
           <img src="logos/Acer.jpg" alt="Acer" class="partner-logo">
           <img src="logos/Apple.jpg" alt="Apple" class="partner-logo">
           <img src="logos/bose.jpg" alt="Bose" class="partner-logo">
@@ -133,23 +157,16 @@
       
       <h3 class="text-3xl font-bold text-center mb-10 text-yellow-400">GOVERNMENT CLIENTS</h3>
       <div class="highlight-container mb-16">
-        <div class="grid grid-cols-3 md:grid-cols-5 gap-10 items-center justify-items-center">
-          <!-- Add your client logos here -->
-          <div class="h-20 w-20 bg-zinc-800/50 rounded-2xl flex items-center justify-center text-xs text-center">Client Logo</div>
-        </div>
-      </div>
-
-      <h3 class="text-3xl font-bold text-center mb-10 text-yellow-400">CORPORATE CLIENTS</h3>
-      <div class="highlight-container">
-        <div class="grid grid-cols-3 md:grid-cols-5 gap-10 items-center justify-items-center">
-          <!-- Add your client logos here -->
-          <div class="h-20 w-20 bg-zinc-800/50 rounded-2xl flex items-center justify-center text-xs text-center">Client Logo</div>
+        <div class="marquee">
+          <!-- Add your client logos here (duplicate for smooth loop) -->
+          <div class="h-20 w-20 bg-zinc-800/70 rounded-2xl flex items-center justify-center text-xs">Client 1</div>
+          <div class="h-20 w-20 bg-zinc-800/70 rounded-2xl flex items-center justify-center text-xs">Client 2</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Products -->
+  <!-- Products & Contact (kept same) -->
   <section id="products" class="py-28 bg-[#2a0000]">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-5xl font-black text-center mb-16">OUR PRODUCTS & SOLUTIONS</h2>
@@ -180,7 +197,6 @@
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact" class="py-28 bg-[#2a0000]">
     <div class="max-w-4xl mx-auto px-6 text-center">
       <div class="glass rounded-3xl p-16">
