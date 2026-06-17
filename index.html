@@ -34,12 +34,20 @@
       letter-spacing: -6px;
       line-height: 1.05;
     }
+    .logo-container {
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 40px 30px;
+    }
     .partner-logo {
-      height: 65px;
+      height: 68px;
       transition: all 0.3s;
+      filter: brightness(1.1) contrast(1.2);
     }
     .partner-logo:hover {
       transform: scale(1.15);
+      filter: brightness(1.3);
     }
   </style>
 </head>
@@ -98,18 +106,20 @@
   <!-- Partners -->
   <section id="partners" class="py-28 bg-[#2a0000]">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-5xl font-black text-center mb-16">OUR PARTNERS</h2>
-      <div class="grid grid-cols-3 md:grid-cols-5 gap-10 items-center justify-items-center">
-        <img src="logos/Acer.jpg" alt="Acer" class="partner-logo">
-        <img src="logos/Apple.jpg" alt="Apple" class="partner-logo">
-        <img src="logos/bose.jpg" alt="Bose" class="partner-logo">
-        <img src="logos/epson.jpg" alt="Epson" class="partner-logo">
-        <img src="logos/jbl.jpg" alt="JBL" class="partner-logo">
-        <img src="logos/LG.jpg" alt="LG" class="partner-logo">
-        <img src="logos/Samsung.jpg" alt="Samsung" class="partner-logo">
-        <img src="logos/shure.jpg" alt="Shure" class="partner-logo">
-        <img src="logos/toa.jpg" alt="TOA" class="partner-logo">
-        <img src="logos/yamaha.jpg" alt="Yamaha" class="partner-logo">
+      <h2 class="text-5xl font-black text-center mb-12">OUR PARTNERS</h2>
+      <div class="logo-container">
+        <div class="grid grid-cols-3 md:grid-cols-5 gap-10 items-center justify-items-center">
+          <img src="logos/Acer.jpg" alt="Acer" class="partner-logo">
+          <img src="logos/Apple.jpg" alt="Apple" class="partner-logo">
+          <img src="logos/bose.jpg" alt="Bose" class="partner-logo">
+          <img src="logos/epson.jpg" alt="Epson" class="partner-logo">
+          <img src="logos/jbl.jpg" alt="JBL" class="partner-logo">
+          <img src="logos/LG.jpg" alt="LG" class="partner-logo">
+          <img src="logos/Samsung.jpg" alt="Samsung" class="partner-logo">
+          <img src="logos/shure.jpg" alt="Shure" class="partner-logo">
+          <img src="logos/toa.jpg" alt="TOA" class="partner-logo">
+          <img src="logos/yamaha.jpg" alt="Yamaha" class="partner-logo">
+        </div>
       </div>
     </div>
   </section>
@@ -117,21 +127,22 @@
   <!-- Clients -->
   <section id="clients" class="py-28 bg-[#2a0000]">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-5xl font-black text-center mb-16">OUR VALUED CLIENTS</h2>
+      <h2 class="text-5xl font-black text-center mb-12">OUR VALUED CLIENTS</h2>
       
       <h3 class="text-3xl font-bold text-center mb-10 text-yellow-400">GOVERNMENT CLIENTS</h3>
-      <div class="grid grid-cols-3 md:grid-cols-5 gap-10 mb-16 items-center justify-items-center">
-        <!-- Add your government client logos here later -->
-        <div class="h-16 w-16 bg-zinc-800 rounded-xl flex items-center justify-center text-xs text-center">Client 1</div>
-        <div class="h-16 w-16 bg-zinc-800 rounded-xl flex items-center justify-center text-xs text-center">Client 2</div>
-        <div class="h-16 w-16 bg-zinc-800 rounded-xl flex items-center justify-center text-xs text-center">Client 3</div>
+      <div class="logo-container mb-16">
+        <div class="grid grid-cols-3 md:grid-cols-5 gap-10 items-center justify-items-center">
+          <!-- Add your client logos here -->
+          <div class="h-20 w-20 bg-zinc-800 rounded-2xl flex items-center justify-center text-xs">Add Logo</div>
+        </div>
       </div>
 
       <h3 class="text-3xl font-bold text-center mb-10 text-yellow-400">CORPORATE CLIENTS</h3>
-      <div class="grid grid-cols-3 md:grid-cols-5 gap-10 items-center justify-items-center">
-        <!-- Add your corporate client logos here later -->
-        <div class="h-16 w-16 bg-zinc-800 rounded-xl flex items-center justify-center text-xs text-center">Client 4</div>
-        <div class="h-16 w-16 bg-zinc-800 rounded-xl flex items-center justify-center text-xs text-center">Client 5</div>
+      <div class="logo-container">
+        <div class="grid grid-cols-3 md:grid-cols-5 gap-10 items-center justify-items-center">
+          <!-- Add your client logos here -->
+          <div class="h-20 w-20 bg-zinc-800 rounded-2xl flex items-center justify-center text-xs">Add Logo</div>
+        </div>
       </div>
     </div>
   </section>
