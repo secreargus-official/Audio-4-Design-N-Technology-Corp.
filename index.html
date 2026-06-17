@@ -3,137 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AUDIO4DESIGN | IN TECHNOLOGY CORP.</title>
+  <title>AUDIO4DESIGN - Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
+      background: linear-gradient(180deg, #2a0000 0%, #000000 100%);
       font-family: 'Segoe UI', system-ui, sans-serif;
     }
-    .hero-bg {
-      background: linear-gradient(135deg, #1a1a1a 0%, #4b0000 100%);
+    .card {
+      background: rgba(20, 0, 0, 0.85);
+      border: 1px solid #7f1d1d;
+      transition: all 0.3s;
+    }
+    .card:hover {
+      border-color: #ef4444;
+      transform: translateY(-5px);
     }
     .logo-text {
-      font-size: 4.5rem;
+      font-size: 4.2rem;
       font-weight: 900;
-      letter-spacing: -4px;
-    }
-    .accent-4 {
-      color: #000;
-      text-shadow: 3px 3px 0 #fff, -1px -1px 0 #fff;
+      letter-spacing: -6px;
     }
   </style>
 </head>
-<body class="bg-zinc-950 text-white">
+<body class="text-white min-h-screen pb-20">
 
-  <!-- Navbar -->
-  <nav class="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-red-900">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <span class="text-3xl font-black tracking-tighter text-red-600">AUDIO4DESIGN</span>
-      </div>
-      <div class="flex gap-8 text-sm font-medium">
-        <a href="#about" class="hover:text-red-500 transition">About</a>
-        <a href="#services" class="hover:text-red-500 transition">Services</a>
-        <a href="#projects" class="hover:text-red-500 transition">Projects</a>
-        <a href="#contact" class="hover:text-red-500 transition">Contact</a>
+  <!-- Hero -->
+  <div class="pt-20 pb-16 text-center border-b border-red-900">
+    <div class="max-w-5xl mx-auto px-6">
+      <h1 class="logo-text text-red-600">AUDIO4DESIGN</h1>
+      <p class="text-2xl text-red-400 tracking-widest mt-1">IN TECHNOLOGY CORP.</p>
+      
+      <div class="flex justify-center gap-4 mt-8">
+        <div class="px-8 py-3 bg-red-950 rounded-full border border-red-700 text-lg">Audio Engineering</div>
+        <div class="px-8 py-3 bg-red-950 rounded-full border border-red-700 text-lg">Sound Design</div>
       </div>
     </div>
-  </nav>
+  </div>
 
-  <!-- Hero Section -->
-  <section class="hero-bg min-h-screen flex items-center pt-20">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <div class="mb-8">
-        <h1 class="logo-text text-red-600">AUDIO<span class="accent-4 text-6xl">4</span>DESIGN</h1>
-        <p class="text-xl tracking-widest text-zinc-400 mt-2">IN TECHNOLOGY CORP.</p>
-      </div>
-      <p class="max-w-2xl mx-auto text-2xl md:text-3xl font-light text-zinc-300 mb-10">
-        Crafting premium audio experiences through innovative design and technology
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 -mt-8">
+
+    <!-- About Me -->
+    <div class="card rounded-3xl p-8">
+      <h2 class="text-3xl font-bold mb-6 text-red-400">ABOUT US</h2>
+      <p class="text-zinc-300 leading-relaxed">
+        We are a technology company specializing in premium audio solutions, immersive sound design, 
+        and innovative audio technology. We transform spaces and experiences through exceptional sound.
       </p>
-      <a href="#contact" 
-         class="inline-block bg-red-600 hover:bg-red-700 px-10 py-4 rounded-full text-lg font-semibold transition transform hover:scale-105">
-        Get In Touch
-      </a>
+      <p class="text-zinc-300 leading-relaxed mt-4">
+        From custom audio systems to digital sound branding, we deliver high-quality results with precision and creativity.
+      </p>
     </div>
-  </section>
 
-  <!-- About -->
-  <section id="about" class="py-24 bg-zinc-900">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12">Who We Are</h2>
-      <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- Skills -->
+    <div class="card rounded-3xl p-8">
+      <h2 class="text-3xl font-bold mb-6 text-red-400">OUR EXPERTISE</h2>
+      <div class="space-y-6">
         <div>
-          <p class="text-lg text-zinc-300 leading-relaxed">
-            AUDIO4DESIGN is a technology company specializing in high-end audio solutions, 
-            sound design, and innovative digital experiences. We blend creativity with cutting-edge technology.
-          </p>
-          <p class="text-lg text-zinc-300 leading-relaxed mt-6">
-            From custom sound systems to immersive audio branding, we deliver excellence in every project.
-          </p>
+          <p class="text-sm uppercase tracking-widest text-zinc-500 mb-2">Core Skills</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-1.5 bg-red-950 rounded-full text-sm">Audio Mixing & Mastering</span>
+            <span class="px-4 py-1.5 bg-red-950 rounded-full text-sm">Spatial Audio</span>
+            <span class="px-4 py-1.5 bg-red-950 rounded-full text-sm">Sound Design</span>
+            <span class="px-4 py-1.5 bg-red-950 rounded-full text-sm">Acoustic Engineering</span>
+          </div>
         </div>
-        <div class="bg-zinc-800 p-8 rounded-2xl border border-red-900">
-          <h3 class="text-red-500 text-xl font-semibold mb-4">Our Expertise</h3>
-          <ul class="space-y-3">
-            <li class="flex items-center gap-3"><i class="fas fa-check text-red-500"></i> Audio Engineering</li>
-            <li class="flex items-center gap-3"><i class="fas fa-check text-red-500"></i> Sound Design & Mixing</li>
-            <li class="flex items-center gap-3"><i class="fas fa-check text-red-500"></i> Immersive Audio (Spatial)</li>
-            <li class="flex items-center gap-3"><i class="fas fa-check text-red-500"></i> Web & Digital Experiences</li>
-          </ul>
+        <div>
+          <p class="text-sm uppercase tracking-widest text-zinc-500 mb-2">Technologies</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-4 py-1.5 bg-zinc-900 rounded-full text-sm">Dolby Atmos</span>
+            <span class="px-4 py-1.5 bg-zinc-900 rounded-full text-sm">Ableton Live</span>
+            <span class="px-4 py-1.5 bg-zinc-900 rounded-full text-sm">Unity / Unreal</span>
+            <span class="px-4 py-1.5 bg-zinc-900 rounded-full text-sm">Web Audio API</span>
+          </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Services -->
-  <section id="services" class="py-24">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-16">Our Services</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-zinc-900 p-8 rounded-3xl hover:border-red-600 border border-transparent transition">
-          <h3 class="text-2xl font-bold mb-4">Audio Production</h3>
-          <p class="text-zinc-400">Professional recording, mixing, and mastering services.</p>
+    <!-- What We Do -->
+    <div class="card rounded-3xl p-8">
+      <h2 class="text-3xl font-bold mb-6 text-red-400">WHAT WE DO</h2>
+      <ul class="space-y-4 text-zinc-300">
+        <li class="flex items-start gap-3"><span class="text-red-500 mt-1">•</span> Professional Audio Production</li>
+        <li class="flex items-start gap-3"><span class="text-red-500 mt-1">•</span> Immersive & Spatial Sound Design</li>
+        <li class="flex items-start gap-3"><span class="text-red-500 mt-1">•</span> Custom Audio Systems Installation</li>
+        <li class="flex items-start gap-3"><span class="text-red-500 mt-1">•</span> Audio Branding & Digital Experiences</li>
+        <li class="flex items-start gap-3"><span class="text-red-500 mt-1">•</span> Live Sound Engineering</li>
+      </ul>
+    </div>
+
+    <!-- Work Process -->
+    <div class="card rounded-3xl p-8">
+      <h2 class="text-3xl font-bold mb-6 text-red-400">OUR PROCESS</h2>
+      <div class="space-y-6 text-sm">
+        <div class="flex gap-4">
+          <div class="w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-xs font-bold">1</div>
+          <div>Discovery & Brief</div>
         </div>
-        <div class="bg-zinc-900 p-8 rounded-3xl hover:border-red-600 border border-transparent transition">
-          <h3 class="text-2xl font-bold mb-4">Sound Design</h3>
-          <p class="text-zinc-400">Custom soundscapes for games, films, apps, and installations.</p>
+        <div class="flex gap-4">
+          <div class="w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-xs font-bold">2</div>
+          <div>Creative Concept & Prototyping</div>
         </div>
-        <div class="bg-zinc-900 p-8 rounded-3xl hover:border-red-600 border border-transparent transition">
-          <h3 class="text-2xl font-bold mb-4">Tech Integration</h3>
-          <p class="text-zinc-400">Smart audio systems and interactive installations.</p>
+        <div class="flex gap-4">
+          <div class="w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-xs font-bold">3</div>
+          <div>Production & Implementation</div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-xs font-bold">4</div>
+          <div>Testing, Delivery & Support</div>
         </div>
       </div>
     </div>
-  </section>
+
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="max-w-6xl mx-auto px-6 mt-12">
+    <h2 class="text-3xl font-bold text-center mb-8 text-red-400">SELECTED PROJECTS</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card rounded-3xl overflow-hidden">
+        <div class="h-48 bg-zinc-800 flex items-center justify-center">
+          <span class="text-4xl">🎵</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-semibold">Immersive Concert Experience</h3>
+          <p class="text-sm text-zinc-400">Spatial audio for live events</p>
+        </div>
+      </div>
+      <div class="card rounded-3xl overflow-hidden">
+        <div class="h-48 bg-zinc-800 flex items-center justify-center">
+          <span class="text-4xl">🎮</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-semibold">Game Sound Design</h3>
+          <p class="text-sm text-zinc-400">Full audio package for indie game</p>
+        </div>
+      </div>
+      <div class="card rounded-3xl overflow-hidden">
+        <div class="h-48 bg-zinc-800 flex items-center justify-center">
+          <span class="text-4xl">🏢</span>
+        </div>
+        <div class="p-6">
+          <h3 class="font-semibold">Corporate Audio Branding</h3>
+          <p class="text-sm text-zinc-400">Complete sound identity system</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Contact -->
-  <section id="contact" class="py-24 bg-zinc-900">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-8">Let's Create Something Great</h2>
-      <p class="text-zinc-400 mb-10">Ready to work together? Drop us a message.</p>
+  <div class="max-w-6xl mx-auto px-6 mt-16">
+    <div class="card rounded-3xl p-10 text-center">
+      <h2 class="text-3xl font-bold mb-4">GET IN TOUCH</h2>
+      <p class="text-zinc-400 mb-8">Ready to elevate your audio experience?</p>
       
-      <form class="max-w-lg mx-auto space-y-6">
-        <input type="text" placeholder="Your Name" 
-               class="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-6 py-4 focus:outline-none focus:border-red-600">
-        <input type="email" placeholder="Email Address" 
-               class="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-6 py-4 focus:outline-none focus:border-red-600">
-        <textarea placeholder="Your Message" rows="5"
-                  class="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-6 py-4 focus:outline-none focus:border-red-600"></textarea>
-        <button type="submit"
-                class="w-full bg-red-600 hover:bg-red-700 py-4 rounded-xl font-semibold text-lg transition">
-          Send Message
-        </button>
-      </form>
+      <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+        <a href="#" class="px-8 py-4 bg-red-600 hover:bg-red-700 rounded-2xl flex items-center gap-3">
+          <i class="fab fa-telegram"></i>
+          <span>Telegram</span>
+        </a>
+        <a href="#" class="px-8 py-4 bg-zinc-800 hover:bg-zinc-700 rounded-2xl flex items-center gap-3">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="#" class="px-8 py-4 bg-zinc-800 hover:bg-zinc-700 rounded-2xl flex items-center gap-3">
+          📧 Email Us
+        </a>
+      </div>
+      
+      <p class="mt-10 text-sm text-zinc-500">AUDIO4DESIGN © 2026 • IN TECHNOLOGY CORP.</p>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-black py-12 border-t border-red-900">
-    <div class="max-w-6xl mx-auto px-6 text-center text-zinc-500">
-      <p class="text-xl font-bold text-red-600">AUDIO4DESIGN</p>
-      <p>IN TECHNOLOGY CORP. © 2026</p>
-    </div>
-  </footer>
+  </div>
 
 </body>
 </html>
