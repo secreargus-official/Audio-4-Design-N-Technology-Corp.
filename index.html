@@ -15,9 +15,9 @@
       scroll-behavior: smooth;
     }
     .glass {
-      background: rgba(255, 255, 255, 0.09);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
     }
     .hero-bg {
       background: linear-gradient(rgba(0,0,0,0.65), rgba(155,0,0,0.75)), 
@@ -34,21 +34,19 @@
       letter-spacing: -6px;
       line-height: 1.05;
     }
-    .section-bg {
-      background: #2c0f0f; /* Modern elegant reddish tone */
-    }
     .highlight-container {
-      background: rgba(255, 255, 255, 0.10);
+      background: rgba(255, 255, 255, 0.12);
       backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.25);
       border-radius: 24px;
-      padding: 45px 30px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      padding: 40px 30px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
     .marquee {
       display: flex;
       gap: 60px;
-      animation: marquee 30s linear infinite;
+      animation: marquee 25s linear infinite;
     }
     .marquee:hover {
       animation-play-state: paused;
@@ -59,11 +57,12 @@
     }
     .partner-logo {
       height: 68px;
+      flex-shrink: 0;
       transition: all 0.3s;
       filter: brightness(1.15) contrast(1.1);
     }
     .partner-logo:hover {
-      transform: scale(1.12);
+      transform: scale(1.15);
     }
   </style>
 </head>
@@ -86,7 +85,7 @@
     </div>
   </nav>
 
-  <!-- Hero (Unchanged) -->
+  <!-- Hero -->
   <section class="hero-bg flex items-center relative">
     <div class="max-w-5xl mx-auto px-6 text-center">
       <h1 class="hero-title text-white">
@@ -104,8 +103,8 @@
     </div>
   </section>
 
-  <!-- About, Partners, Clients, Products, Contact - All use modern reddish tone -->
-  <section id="about" class="py-28 section-bg">
+  <!-- About -->
+  <section id="about" class="py-28 bg-[#2a0000]">
     <div class="max-w-5xl mx-auto px-6">
       <div class="glass rounded-3xl p-12 md:p-16">
         <h2 class="text-5xl font-black mb-10 text-center">A SOUND TECHNOLOGY COMPANY</h2>
@@ -120,7 +119,7 @@
   </section>
 
   <!-- Partners -->
-  <section id="partners" class="py-28 section-bg">
+  <section id="partners" class="py-28 bg-[#2a0000]">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-5xl font-black text-center mb-12">OUR PARTNERS</h2>
       <div class="highlight-container">
@@ -135,7 +134,7 @@
           <img src="logos/shure.jpg" alt="Shure" class="partner-logo">
           <img src="logos/toa.jpg" alt="TOA" class="partner-logo">
           <img src="logos/yamaha.jpg" alt="Yamaha" class="partner-logo">
-          <!-- Duplicate -->
+          <!-- Duplicate for smooth infinite loop -->
           <img src="logos/Acer.jpg" alt="Acer" class="partner-logo">
           <img src="logos/Apple.jpg" alt="Apple" class="partner-logo">
           <img src="logos/bose.jpg" alt="Bose" class="partner-logo">
@@ -152,21 +151,23 @@
   </section>
 
   <!-- Clients -->
-  <section id="clients" class="py-28 section-bg">
+  <section id="clients" class="py-28 bg-[#2a0000]">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-5xl font-black text-center mb-12">OUR VALUED CLIENTS</h2>
+      
       <h3 class="text-3xl font-bold text-center mb-10 text-yellow-400">GOVERNMENT CLIENTS</h3>
       <div class="highlight-container mb-16">
         <div class="marquee">
-          <!-- Add your client logos here later -->
-          <div class="h-20 w-20 bg-zinc-800/70 rounded-2xl flex items-center justify-center text-xs">Add Logo</div>
+          <!-- Add your client logos here (duplicate for smooth loop) -->
+          <div class="h-20 w-20 bg-zinc-800/70 rounded-2xl flex items-center justify-center text-xs">Client 1</div>
+          <div class="h-20 w-20 bg-zinc-800/70 rounded-2xl flex items-center justify-center text-xs">Client 2</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Products -->
-  <section id="products" class="py-28 section-bg">
+  <!-- Products & Contact (kept same) -->
+  <section id="products" class="py-28 bg-[#2a0000]">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-5xl font-black text-center mb-16">OUR PRODUCTS & SOLUTIONS</h2>
       <div class="grid md:grid-cols-2 gap-8">
@@ -196,8 +197,7 @@
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-28 section-bg">
+  <section id="contact" class="py-28 bg-[#2a0000]">
     <div class="max-w-4xl mx-auto px-6 text-center">
       <div class="glass rounded-3xl p-16">
         <h2 class="text-5xl font-black mb-8">GET IN TOUCH</h2>
